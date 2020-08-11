@@ -13,7 +13,7 @@ let win;
 function createWindow() {
     win = new BrowserWindow();
     win.loadURL(url.format({
-        pathname: path.join(__dirname, '../html/index.html'),
+        pathname: path.join(__dirname, '../html/login.html'),
         protocol: 'file',
         slashes: true
     }));
@@ -22,5 +22,5 @@ function createWindow() {
         win = null;
     })
 }
-
+    
 app.on('ready', createWindow);
